@@ -5,6 +5,8 @@ package_name = "mongodb_connect"
 
 list_of_files = [
     ".github/workflows/ci.yaml",
+    ".github/workflows/python-publish.yaml",
+    ".gitignore",
     "src/__init__.py",
     f"src/{package_name}/__init__.py",
     f"src/{package_name}/mongo_curd.py",
@@ -18,7 +20,7 @@ list_of_files = [
     "requirements_dev.txt",
     "setup.cfg",
     "setup.py",
-    "myproject.toml",
+    "pyproject.toml",
     "tox.ini",
     "experiment/experiments.ipynb"
 ]

@@ -1,0 +1,40 @@
+1). ##################### requirements.txt #####################
+This file is commonly used to list the main or production dependencies of your project. It contains the packages and versions 
+that are necessary for the application to run in a production environment. When someone is installing your application for deployment, 
+they would typically use pip install -r requirements.txt to install the production 
+
+
+2). ##################### requirements_dev.txt #####################
+This file is used to list development or testing dependencies. It includes packages that are not required for the production environment
+but are necessary for development, testing, or running additional tools (e.g., testing frameworks, linters).
+
+
+3). ##################### tox.ini #####################
+The tox.ini file is used with the tox testing tool in the Python ecosystem. tox helps automate the testing and building of 
+Python projects across different environments. allows you to define multiple testing environments, each with its own configuration. 
+This is particularly useful when you want to test your project against different Python versions.
+
+# stop the build if there are Python syntax errors or undefined names
+flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
+# exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+flake8 src --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+It looks like you have a set of commands in a comment block, likely meant to be used in a CI/CD pipeline or a code analysis tool. 
+These commands use flake8 to check for Python syntax errors, undefined names, and other code quality issues.
+
+
+4). ##################### setup.py #####################
+A setup.py file is a standard script used in Python projects to package and distribute software. It is used with the setuptools library
+to describe the metadata of a Python project, such as its name, version, author, dependencies, and other relevant information. 
+This file is typically found in the root directory of a Python project.
+
+5). ##################### setup.cng #####################
+The setup.cfg file is a configuration file commonly used in Python projects to specify various settings related to packaging and 
+distribution. It is an alternative to using only a setup.py script for configuration and is often preferred for simpler projects. 
+The setup.cfg file can include configuration options for setuptools and other tools involved in the packaging and distribution process.
+eg: in pypi tensorflow page we can see some configuration information regarding that package.
+
+6). ##################### pyproject.toml #####################
+The pyproject.toml file is a configuration file specified in PEP 518 and PEP 621. It is part of the modern Python packaging ecosystem 
+and is used to define project metadata, build system configuration, and dependencies. The file is particularly associated with the 
+use of the PEP 517 and PEP 518 standards for defining the build backend and frontend, respectively.

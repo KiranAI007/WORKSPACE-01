@@ -1,0 +1,17 @@
+pymongo
+pymongo[srv]
+# for dns server to connect with mongodb,  interacting with the Domain Name System (DNS).
+dnspython
+pandas
+numpy
+ensure
+
+-e . 
+
+# dev requirements . 
+pytest==7.1.3
+# testing and building Python projects across different environments
+tox==3.25.1
+black==22.8.0
+flake8==5.0.4
+mypy==0.971
