@@ -29,12 +29,15 @@ to describe the metadata of a Python project, such as its name, version, author,
 This file is typically found in the root directory of a Python project.
 
 5). ##################### setup.cng #####################
-The setup.cfg file is a configuration file commonly used in Python projects to specify various settings related to packaging and 
+In summary setup.cnf is used by setuptools to configure the packaging and installation of a python project. Just metadata of the package.
+it is the meta data, The setup.cfg file is a configuration file commonly used in Python projects to specify various settings related to packaging and 
 distribution. It is an alternative to using only a setup.py script for configuration and is often preferred for simpler projects. 
 The setup.cfg file can include configuration options for setuptools and other tools involved in the packaging and distribution process.
 eg: in pypi tensorflow page we can see some configuration information regarding that package.
 
 6). ##################### pyproject.toml #####################
+it is being used for configuration the python project it is an alternative of setup.cnf file. Its containts configuration related to the build system such as the build tool used
+package name, version, auther name, licence and dependency
 The pyproject.toml file is a configuration file specified in PEP 518 and PEP 621. It is part of the modern Python packaging ecosystem 
 and is used to define project metadata, build system configuration, and dependencies. The file is particularly associated with the 
 use of the PEP 517 and PEP 518 standards for defining the build backend and frontend, respectively.
